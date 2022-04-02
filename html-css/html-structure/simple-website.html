@@ -14,6 +14,7 @@
         nav#topMenu {
             background-color: #473b3a;
             outline: 20px solid #473b3a;
+            text-decoration: none;
         }
         section#footer {
             left: 0;
@@ -31,11 +32,11 @@
 <body>
     <nav id="topMenu">
         <ul type="none" style="text-align: center; margin: 0;">
-            <li>Home</li>
-            <li>Tutorial</li>
-            <li>About</li>
-            <li>Newsletter</li>
-            <li>Contact</li>
+            <li><a href="#content">Home</a></li>
+            <li><a href="#">Tutorial</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Newsletters</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
     <main>
@@ -44,15 +45,40 @@
                 <header>
                     <h1>Just Another Day</h1>
                     <p style="font-size: 12px; font-style: italic">Written by Christina on January 11th</p>
+                    <figure style="text-align: center">
+                        <img src="images/3QNGJwM.png" alt="the">
+                        <figcaption>Fig.1 - MM</figcaption>
+                    </figure>
                 </header>
-                <p style="font-size: 25px;">This is my second blog entry, and I just wanted to check in on you</p>
+                <p style="font-size: 18px;">This is my second blog entry, and I just wanted to check in on you</p>
+                <details>
+                    <summary>Some details</summary>
+                    <p>More info about the details</p>
+                </details>
             </article>
             <article>
                 <header>
                     <h1>My First Blog Entry</h1>
                     <p style="font-size: 12px; font-style: italic">Written by Christina on January 10th</p>
                 </header>
-                <p style="font-size: 25px;">I'm so happy to write my first blog entry - yah!</p>
+                <p style="font-size: 18px;">I'm so happy to write my first blog entry - yah!</p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <header>
+                    <h1>Music Player</h1>
+                </header>
+                <audio controls autoplay>
+                    <source src="musics/a.flac" type="audio/flac">
+                </audio>
+                <details>
+                    <summary style="font-style: oblique">Video Player</summary>
+                    <video controls="controls">
+                        <source src="videos/video1.mp4" type="video/mp4">
+                    </video>
+                </details>
+
             </article>
         </section>
     </main>
