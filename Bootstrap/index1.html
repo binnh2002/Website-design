@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <h1>This is my first javascript</h1>
+    <p>Javascript provides a programming library to write/execute embedded scripts on a web browser</p>
+ <script language="javascript" type="text/javascript">
+     let n = prompt("enter number n:");
+     let i = 0;
+     if(n == null|| n == ""|| isNaN(n)){
+         document.write("<font color='red'>Number n is valid</font>")
+     }
+     while (i < n){
+         if (i % 2 === 0){
+             document.write("<font color='red'>" + i  + '\t' + "</font>");
+         }
+         i++;
+     }
+alert("Done!");
+ </script>
+</body>
+</html>
