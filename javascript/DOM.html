@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trainer list</title>
+</head>
+<body>
+      <article>
+          <header>
+              <h2>This is trainer list</h2>
+          </header>
+          <ol>
+              <li class="trainer-list-item">Nguyen Thanh Binh</li>
+              <li class="trainer-list-item">Nguyen Tram</li>
+              <li class="trainer-list-item">Nguyen Yen</li>
+              <li class="trainer-list-item">Nguyen Khoa</li>
+              <li class="trainer-list-item">Nguyen Minh</li>
+          </ol>
+      </article>
+</body>
+    <script>
+        var trainerList = document.getElementsByClassName("trainer-list-item");
+        for ( var i = 0; i < trainerList.length; i++){
+           alert(trainerList[i].innerHTML);
+        }
+    </script>
+</html>
